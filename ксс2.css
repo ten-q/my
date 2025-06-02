@@ -1,0 +1,17 @@
+﻿body {
+background-image: url("фон.gif");
+cursor: url(курс.gif), auto;
+font-family: 'IBM Plex Mono', monospace;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.options {
+margin-top: 15px;
+}
+
+.option {
+margin: 8px 0;
+}
+
