@@ -1,8 +1,36 @@
-﻿body {
+body {
 margin: 0;
 padding: 0;
 background-image: url("фон.gif");
 cursor: url(курс.gif), auto;
+}
+
+.rekl2 {
+min-height: 320vh;
+position: absolute;
+left: 5%;
+top: 35%;
+font-size: 1.2vw;
+}
+
+.rek2 {
+position: sticky;
+width: 10vw;
+top: 20px;
+}
+
+.rekl1 {
+min-height: 350vh;
+position: absolute;
+left: 85%;
+top: 0;
+font-size: 1.2vw;
+}
+
+.rek1 {
+position: sticky;
+width: 10vw;
+top: 20px;
 }
 
 .webma{
@@ -26,7 +54,6 @@ width: 10vw;
 height: 12vw;
 top: 4vw;
 left: 5%;
-border: 1px solid blue;
 font-size: 1vw;
 }
 
@@ -35,41 +62,11 @@ height: 1.5vw;
 }
 
 .рклм img{
-margin-top: 10vh;
+margin-top: 5vh;
 display: block;
 width: 100%;
 height: auto;
 border: 1px solid black;
-}
-
-.rekl{
-height: 390vh;
-position: absolute;
-border: 1px solid black;
-left: 85%;
-top: 0%;
-font-size: 1.2vw;
-}
-
-.rek {
-position: sticky;
-top: 20px;
-width: 10vw;
-}
-
-.rekl2{
-min-height: 357vh;
-position: absolute;
-border: 1px solid black;
-left: 5%;
-top: 35%;
-font-size: 1.2vw;
-}
-
-.rek2 {
-position: sticky;
-width: 10vw;
-top: 20px;
 }
 
 .зал {
@@ -93,11 +90,12 @@ margin-left: auto;
 margin-right: auto;
 width: 60vw;
 text-align: justify;
+font-size: 1.2vw;
 font-family: 'IBM Plex Mono', monospace;
 }
 
 .txt video{
-height: 60vh;
+height: 100%;
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -133,6 +131,7 @@ color: black;
 .box {
 text-align: center;
 font-family: 'IBM Plex Mono', monospace;
+background-image: url("фон2.gif");
 }
 
 .gena {
@@ -155,19 +154,53 @@ color: black;
 height: 4vh;
 }
 
-@media (max-width: 1200px) {
-.rekl{
-left: 5%;
-top: 200%;
+@media (max-width: 980px) {
+.rekl2{
+min-height: 380vh;
+left: 2%;
+top: 0;
+font-size: 2vw;
+} 
+
+.rek2 {
+width: 15vw;
+top: 0;
+}
+
+.rekl1{
+min-height: 380vh;
+left: 2%;
+font-size: 2vw;
+}
+
+.rek1 {
+top: 50%;
+width: 15vw;
+position: sticky;
 }
 
 .txt {
+width: 100%;
 margin-left: 20%;
+text-align: left;
+}
+
+.txt video{
+height: 100%;
+}
+
+.зал img{
+width: 6%;
+}
+
+.кор{
+height: 100%;
 }
 
 .wrapper {
   grid-row-gap: 2vw;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}  
 .box {
 font-size: 2vw;
 }
@@ -175,5 +208,24 @@ font-size: 2vw;
 width: 30vw;
 height: 30vw;
 }
+.but {
+display: none;  
+}
+#leftmenu {
+display: none; 
+}
+.webma{
+transform: rotate(0deg);  
+margin-left: 1vh;
+margin-top: -4vh;
+font-size: 2vw;
+width: 100%;
+}
+.вит {
+font-size: 6vw;
+}
 
+.вит img {
+height: 4vh;
+}
 }
